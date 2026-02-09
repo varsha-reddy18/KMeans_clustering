@@ -19,7 +19,7 @@ st.markdown("""
 <style>
 /* Page background */
 .main {
-    background: linear-gradient(135deg, #f8f9ff, #eef2ff);
+    background: linear-gradient(135deg, #f9fafb, #eef2f7);
 }
 
 /* Container spacing */
@@ -27,97 +27,76 @@ st.markdown("""
     padding-top: 2rem;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6, p, span, label {
+    color: #000000 !important;
+}
+
 /* Metrics cards */
 .stMetric {
-    background: white;
+    background: #ffffff;
     padding: 18px;
     border-radius: 14px;
-    border-left: 6px solid #6366f1;
-    box-shadow: 0 10px 25px rgba(99,102,241,0.15);
-    color: #1f2937;
-}
-
-/* Headings */
-h1 {
-    color: #1e3a8a;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-h2, h3 {
-    color: #1f2937;
-    font-weight: 600;
+    border-left: 6px solid #2563eb;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 /* Prediction box */
 .prediction-box {
-    background: linear-gradient(135deg, #6366f1, #3b82f6);
-    padding: 32px;
-    border-radius: 20px;
-    color: white;
+    background: #e0e7ff;
+    padding: 30px;
+    border-radius: 18px;
     text-align: center;
-    box-shadow: 0 15px 30px rgba(59,130,246,0.3);
-    animation: fadeIn 0.6s ease-in-out;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* Cluster info cards */
 .cluster-info {
-    background: white;
+    background: #ffffff;
     padding: 22px;
     border-radius: 16px;
     margin: 12px 0;
-    border-left: 6px solid #3b82f6;
-    box-shadow: 0 10px 25px rgba(59,130,246,0.18);
-    color: #1f2937;
+    border-left: 6px solid #2563eb;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.14);
 }
 
 /* Buttons */
 .stButton > button {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
-    color: white;
+    background: #dbeafe;
+    color: #000000;
     font-weight: 600;
     border-radius: 12px;
     padding: 12px 24px;
-    border: none;
-    box-shadow: 0 6px 16px rgba(34,197,94,0.35);
+    border: 1px solid #2563eb;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     transition: all 0.25s ease;
 }
 
 .stButton > button:hover {
+    background: #bfdbfe;
     transform: translateY(-2px);
-    box-shadow: 0 10px 22px rgba(34,197,94,0.45);
 }
 
 /* Sliders */
 .stSlider > div {
-    color: #1f2937;
+    color: #000000;
 }
 
-/* Info box */
+/* Info / success boxes */
 .stAlert {
+    background-color: #ffffff;
+    color: #000000;
     border-radius: 12px;
+    border-left: 6px solid #2563eb;
 }
 
 /* Remove Streamlit footer */
 footer {
     visibility: hidden;
 }
-
-/* Fade animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 </style>
 """, unsafe_allow_html=True)
+
 
 
 # Load the trained model
