@@ -331,7 +331,7 @@ if model is not None and df is not None:
         
         with viz_col1:
             # 3D scatter plot showing the prediction
-            clustered_df = pd.read_csv("clustered_mall_customers.csv")
+            clustered_df = pd.read_csv("Cluster_mall_customer.csv")
             
             # Inverse transform to original scale for visualization
             original_scaled = clustered_df[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']].copy()
