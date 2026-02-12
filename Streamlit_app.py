@@ -157,7 +157,7 @@ CLUSTER_INFO = {
 
 # Title and Description
 st.markdown("""
-    <h1>🛍️ Mall Customer Clustering Prediction</h1>
+    <h1>🛍️ Mall Customer K-Means Clustering Prediction</h1>
     <p style='color: white; font-size: 16px; text-align: center;'>
     Predict customer segments and discover which group your customer belongs to!
     </p>
